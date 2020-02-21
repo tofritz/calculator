@@ -122,6 +122,8 @@ function evalButtonPress(event) {
   disableEvalButton();
 }
 
+// figure out bug here when pressed after opkey
+
 function posnegButtonPress(event) {
   currentDisplayVal *= -1;
   currentDisplayVal = currentDisplayVal.toString(); // retype to string

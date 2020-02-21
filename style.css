@@ -248,11 +248,11 @@ body {
 
 .button-eval {
   grid-area: 6 / 4 / 6 / 6;
+  color: #f5b428;
 }
 
 .button-posneg {
   grid-area: 5 / 3 / 5 / 3;
-  color: #5adbff;
 }
 
 .button-clear {
