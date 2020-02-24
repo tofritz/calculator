@@ -111,7 +111,6 @@ function opButtonPress(event) {
   if (checkResultPossible()) {
     evaluateValues();
   }
-
   currentOperator = event.target.textContent.trim();
   if (currentDisplayVal != "") previousDisplayVal = currentDisplayVal;
   currentDisplayVal = "";
@@ -164,25 +163,3 @@ delButton.addEventListener("click", delButtonPress);
 
 /* initialize states */
 disableEvalButton();
-
-/* keyboard support */
-
-window.addEventListener("keydown", checkKeyPress, true);
-function checkKeyPress(key) {
-  if (key.shiftKey == true) {
-    switch (key.keyCode) {
-      case 187:
-        console.log("test");
-        break;
-      case 56:
-        opButtonPress;
-        break;
-    }
-  } else {
-    switch (key.keyCode) {
-      case 48:
-        numButtonPress;
-        break;
-    }
-  }
-}

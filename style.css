@@ -152,12 +152,16 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, auto);
   grid-gap: 10px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid #f5b428;
   background: #282a36;
 
   margin: auto;
   width: 400px;
   padding: 20px;
+
+  box-shadow: 5px 5px #f5b428, 5px 5px #f5b428, 5px 5px #f5b428, 4px 4px #f5b428,
+    2px 2px #f5b428;
+  border-radius: 5px;
 }
 
 .calc-display {
@@ -167,12 +171,15 @@ body {
   line-height: 50px;
   padding-left: 10px;
   margin-bottom: 10px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid #5adbff;
+  border-radius: 5px;
 }
 
 .button {
   background: #282a36;
   border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 2px 2px #f3f3f3, 2px 2px #f3f3f3, 1px 1px #f3f3f3;
   line-height: 50px;
   height: 50px;
   text-align: center;
@@ -184,6 +191,11 @@ body {
 
 .button:hover {
   cursor: pointer;
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateX(2px) translateY(2px);
 }
 
 .num-0 {
